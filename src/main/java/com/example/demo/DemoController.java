@@ -10,10 +10,6 @@ import org.springframework.ui.Model;
 @Controller
 public class DemoController {
 
-
-   
-
-
     @GetMapping("/home")
 	public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
 		model.addAttribute("name", name);
